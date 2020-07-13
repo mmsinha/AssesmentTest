@@ -1,0 +1,17 @@
+﻿@model Maersk_Assesment.Models.BusinessRules
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using(Html.BeginForm("Index","Home",FormMethod.Post)){
+    <div>
+    @Html.DropDownListFor(model=>model.businessRule, Model.dropdownRuleList)
+        <input type="submit" name="Submit" />
+   </div>
+    
+    }
+}
+
